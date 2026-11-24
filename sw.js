@@ -1,4 +1,4 @@
-const CACHE_NAME = 'pm-liquid-v4';
+const CACHE_NAME = 'pm-liquid-v5';
 const ASSETS = [
   './',
   './index.html',
@@ -6,12 +6,15 @@ const ASSETS = [
   './manifest.json',
   './state.js',
   './views-core.js',
-  './views-screens.js',
+  './screens-main.js',
+  './screens-lists.js',
   './analytics-core.js',
-  './analytics-views.js',
+  './reviews.js',
+  './reports-settings.js',
   './demo.js',
   './modals-1.js',
-  './modals-2.js'
+  './modals-tasks.js',
+  './modals-meetings-init.js'
 ];
 
 self.addEventListener('install', event => {
