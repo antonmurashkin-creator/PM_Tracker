@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PM Liquid Tracker</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="ambient-bg">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+  </div>
+
+  <div class="app-shell">
+    <aside class="glass-sidebar">
+      <div class="brand">
+        <div class="brand-icon">◈</div>
+        <span>PM Liquid</span>
+      </div>
+      <nav id="navMenu"></nav>
+      <div class="sidebar-footer">
+        <div id="syncStatus" class="sync-badge">Локальный режим</div>
+        <button id="btnQuickSync" class="btn btn-glass btn-sm">↻ Синхронизировать</button>
+      </div>
+    </aside>
+
+    <main class="main-area">
+      <header class="glass-header">
+        <div>
+          <h1 id="pageTitle">Сегодня</h1>
+          <div id="pageSubtitle" class="subtitle"></div>
+        </div>
+        <div id="headerActions" class="header-actions"></div>
+      </header>
+
+      <div id="filterBar" class="filter-bar"></div>
+      <section id="viewContainer"></section>
+    </main>
+  </div>
+
+  <dialog id="modalDialog" class="glass-modal">
+    <form id="modalForm" method="dialog"></form>
+  </dialog>
+
+  <datalist id="peopleDatalist"></datalist>
+
+  <script src="state.js"></script>
+  <script src="views-core.js"></script>
+  <script src="views-screens.js"></script>
+  <script src="analytics-core.js"></script>
+  <script src="analytics-views.js"></script>
+  <script src="demo.js"></script>
+  <script src="modals-1.js"></script>
+  <script src="modals-2.js"></script>
+</body>
+</html>
