@@ -1,6 +1,6 @@
 {
-  "name": "PM Liquid Tracker",
-  "short_name": "PM Tracker",
+  "name": "PM Tracker",
+  "short_name": "PM",
   "start_url": "./index.html",
   "display": "standalone",
   "background_color": "#0f172a",
