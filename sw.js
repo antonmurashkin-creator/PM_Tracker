@@ -1,4 +1,4 @@
-const CACHE_NAME = 'pm-liquid-v5';
+const CACHE_NAME = 'pm-liquid-v1';
 const ASSETS = [
   './',
   './index.html',
