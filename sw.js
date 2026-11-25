@@ -15,6 +15,7 @@ const ASSETS = [
   './modals-1.js',
   './modals-tasks.js',
   './modals-meetings-init.js'
+  './icon.svg'
 ];
 
 self.addEventListener('install', event => {
