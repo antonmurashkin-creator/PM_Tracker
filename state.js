@@ -256,12 +256,14 @@ function updatePeopleDatalist() {
 
 function upsertRecord(table, obj) {
   const list = DB[table];
-  const idx = list.findIndex(x => x.id === obj.id);
+  const idx = obj.id ? list.findIndex(x => x.id === obj.id) : -1;
   const ts = nowISO();
   if (idx >= 0) {
     list[idx] = { ...list[idx], ...obj, updated_at: ts };
   } else {
-    list.push({ id: uuid(), created_at: ts, updated_at: ts, is_deleted: false, ...obj });
+    const rec = { created_at: ts, updated_at: ts, is_deleted: false, ...obj };
+    if (!rec.id) rec.id = uuid();
+    list.push(rec);
   }
 }
 
